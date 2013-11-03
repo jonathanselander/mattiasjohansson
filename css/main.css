@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: table;
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-color: turquoise;
+  color: black;
+  display: table-cell;
+	font:300 16px/24px "Roboto", Arial, Helvetica, sans-serif;
+  padding: 0 20px;
+  text-align: center;
+  vertical-align: middle;
+	-webkit-animation: fade 2s;
+	animation: fade 2s;
+	text-rendering: optimizeLegibility;
+	-webkit-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+
+a {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  color: black;
+  text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  color: white;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+p {
+  margin: 0 auto 26px auto;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 48px;
+  margin: 0 0 26px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+}
+
+@media (max-width: 480px) {
+  span {
+    display: block;
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    background-color: purple;
+  }
+  p {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: blue;
+    font-size: 22px;
+    line-height: 36px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: yellow;
+  }
+  p {
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: pink;
+  }
+    p {
+    max-width: 55%;
+  }
+}
+
+@media (min-width: 1380px) {
+  body {
+    background-color: turquoise;
+  }
+}
+
+@-webkit-keyframes fade {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@keyframes fade {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
